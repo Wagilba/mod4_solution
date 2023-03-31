@@ -3,7 +3,36 @@
 <head>
   <meta charset="utf-8">
   <title>Module 4 Solution Starter</title>
-  <script src="script.js"></script>
+  <script 
+          // Define helloSpeaker object
+var helloSpeaker = {
+  speak: function(name) {
+    console.log("Hello " + name);
+  }
+};
+
+// Define byeSpeaker object
+var byeSpeaker = {
+  speak: function(name) {
+    console.log("Goodbye " + name);
+  }
+};
+
+// Invoke the function that loops over the names array
+(function() {
+  var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+
+  for (var i = 0; i < names.length; i++) {
+    var firstLetter = names[i].charAt(0).toLowerCase();
+    if (firstLetter === 'j') {
+      byeSpeaker.speak(names[i]);
+    } else {
+      helloSpeaker.speak(names[i]);
+    }
+  }
+})();
+
+  </script>
 </head>
 <body>
   <h1>Module 4 Solution Starter</h1>
