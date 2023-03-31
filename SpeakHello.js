@@ -1,11 +1,11 @@
 // Define helloSpeaker object
-/*var helloSpeaker = {
+var helloSpeaker = {
   speak: function(name) {
     console.log("Hello " + name);
   }
 };
-*/
 
+/*
 (function(window) {	
 	var speakWord = "Hello";
 	var helloSpeaker = {};	
@@ -14,3 +14,4 @@
 	}
 	window.helloSpeaker =  helloSpeaker;
 })(window);
+*/
